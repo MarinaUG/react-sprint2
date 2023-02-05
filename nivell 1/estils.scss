@@ -1,0 +1,15 @@
+//custom variables//
+$primary: #5265E1;
+$secondary: #FA5959;
+
+.dibuixblau{
+    min-height: 70%;
+    background-color: $primary;
+    margin-left: 20%;
+    margin-top: 25%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 25%;
+} 
+
+//importar el bootstrap//
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -7,9 +7,27 @@ $secondary: #FA5959;
     background-color: $primary;
     margin-left: 20%;
     margin-top: 25%;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 25%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
 } 
+
+.dibuixblau2{
+    min-height: 70%;
+    background-color: $primary;
+    margin-right: 20%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+} 
+
+#pills-bookmark-tab, #pills-search-tab, #pills-share-tab{
+    background-color: transparent;
+    color: black; 
+}
+#pills-tab a {
+    border-bottom: 3px solid red;
+}
 
 //importar el bootstrap//
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

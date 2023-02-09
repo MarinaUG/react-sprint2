@@ -41,13 +41,28 @@ h5{
 }
 
 .primera{
-  top:0px;
+  top:-10px;
 }
 .segona{
-  top:100px;
+  top:40px;
 }
 .tercera{
-  top:200px;
+  top:100px;
+}
+.accordion-header{
+  font-size:15px;
+  border-top: 1px solid rgb(238, 234, 234);
+  border-bottom: 1px solid rgb(238, 234, 234);
+}
+.accordion-item h2 button{
+  display:block;
+  text-align: left;
+  text-decoration: none;
+  position:relative;
+}
+.accordion-item h2 button img{
+  position:absolute;
+  right:20px;
 }
 
 //importar el bootstrap//

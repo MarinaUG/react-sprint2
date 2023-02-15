@@ -64,7 +64,42 @@ h5{
 .accordion-item h2 button img{
   position:absolute;
   right:20px;
+  }
+  
+  .accordion-item h2 button.collapse img{
+  position:absolute;
+  right:20px;
+  transform:rotate(180deg);
+  transition: .3s ease-in-out;
+}  
+
+.navbar-nav .nav-link:hover{
+  color:$secondary;
 }
+
+.navbar-nav .nav-link.btn{
+  background-color: $secondary;
+  color:white;
+}
+ 
+.navbar-nav .nav-link.btn:hover{
+  background-color: white;
+  color:$secondary;
+  border-color: $secondary; 
+}
+
+#pills-bookmark-tab:hover,#pills-search-tab:hover, #pills-share-tab:hover{
+  color:$secondary;
+}
+.text-end .btn-primary:hover{
+  background-color: white;
+  border-color: $primary;
+  color:$primary;
+}
+.accordion-button:hover{
+  color:$secondary;
+}
+
 
 //importar el bootstrap//
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

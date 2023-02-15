@@ -69,6 +69,42 @@ h5, .h5 {
   right: 20px;
 }
 
+.accordion-item h2 button.collapse img, .accordion-item .h2 button.collapse img {
+  position: absolute;
+  right: 20px;
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FA5959;
+}
+
+.navbar-nav .nav-link.btn {
+  background-color: #FA5959;
+  color: white;
+}
+
+.navbar-nav .nav-link.btn:hover {
+  background-color: white;
+  color: #FA5959;
+  border-color: #FA5959;
+}
+
+#pills-bookmark-tab:hover, #pills-search-tab:hover, #pills-share-tab:hover {
+  color: #FA5959;
+}
+
+.text-end .btn-primary:hover {
+  background-color: white;
+  border-color: #5265E1;
+  color: #5265E1;
+}
+
+.accordion-button:hover {
+  color: #FA5959;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

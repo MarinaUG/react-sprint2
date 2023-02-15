@@ -33,7 +33,7 @@
                                 aria-disabled="true">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active bg-secondary rounded text-white text-uppercase p-2"
+                            <a class="nav-link btn rounded text-uppercase p-2"
                                 aria-current="page" href="#">Login</a>
                         </li>
                     </ul>
@@ -76,13 +76,13 @@
                         Bookmarking</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-search-tab" data-bs-toggle="pill" href="#pills-search" role="tab"
-                        type="button" aria-controls="pills-search" aria-selected="false">Speedy
+                    <a class="nav-link" id="pills-search-tab" data-bs-toggle="pill" href="#pills-search"
+                        role="tab" type="button" aria-controls="pills-search" aria-selected="false">Speedy
                         Searching</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="pills-share-tab" data-bs-toggle="pill" href="#pills-share" role="tab"
-                        type="button" aria-controls="pills-share" aria-selected="false">Easy Sharing</a>
+                    <a class="nav-link" id="pills-share-tab" data-bs-toggle="pill" href="#pills-share"
+                        role="tab" type="button" aria-controls="pills-share" aria-selected="false">Easy Sharing</a>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -154,7 +154,7 @@
                         </div>
                         <div class="text-end">
                             <div><img src="../Imagenes/bg-dots.svg" alt="punts"> </div>
-                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Chrome</button></div>
+                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Add & Install Extension</button></div>
                         </div>
                     </div>
                 </div>
@@ -163,11 +163,11 @@
                         <img src="../Imagenes/logo-firefox.svg" class="card-img-top w-50 mx-auto d-block" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Add to Firebox</h5>
-                            <p class="card-text text-black-50">Minimum version</p>
+                            <p class="card-text text-black-50">Minimum version 55</p>
                         </div>
                         <div class="text-end">
                             <div><img src="../Imagenes/bg-dots.svg" alt="punts"> </div>
-                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Chrome</button></div>
+                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Add & Install Extension</button></div>
                         </div>
                     </div>
                 </div>
@@ -176,11 +176,11 @@
                         <img src="../Imagenes/logo-opera.svg" class="card-img-top w-50 mx-auto d-block" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Add to Opera</h5>
-                            <p class="card-text text-black-50">Minimum version XX</p>
+                            <p class="card-text text-black-50">Minimum version 46</p>
                         </div>
                         <div class="text-end">
                             <div><img src="../Imagenes/bg-dots.svg" alt="punts"> </div>
-                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Chrome</button></div>
+                            <div class="d-grid gap-3"><button href="#" class="btn btn-primary">Add & Install Extension</button></div>
                         </div>
                     </div>
                 </div>
@@ -284,16 +284,13 @@
         <div class="container p-4 text-center text-white">
             <h6 class="text-uppercase py-4">35.000 already joined</h6>
             <h2>Stay up-to-date with what we're doing</h2>
-            <form class="needs-validation" novalidate>
-                <div class="row d-flex gap-3 justify-content-center py-4">
-                    <div class="col-12 col-lg-3 col-md-3 g-2">
-                        <input type="email" class="form-control form-control-sm" placeholder="Enter your email address"
-                            required>
-                        <div class="invalid-feedback bg-secondary text-white p-1">Whoops make sure it's an email</div>
-                    </div>
-                    <div class="col-12 col-lg-2 col-md-2 g-2">
-                        <button class="btn btn-secondary text-white rounded-1" type="submit">Contact us</button>
-                    </div>
+            <form action="#" class="row justify-content-center py-4">
+                <div class="form col-12 col-lg-3 col-md-3 g-2">
+                    <input type="email" placeholder="Enter your email adress" class="form-control" required>
+                   
+                </div>
+                <div class="form col-12 col-lg-2 col-md-2 g-2">
+                    <button class="btn btn-secondary text-white rounded-1" type="submit">Contact us</button>
                 </div>
             </form>
         </div>
@@ -308,35 +305,14 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-4 text-center text-md-end">
-                    <img src="../Imagenes/icon-facebook.svg" href="#" alt="facebook icon" class=" text-white p-3">
+                    <img src="../Imagenes/icon-facebook.svg" href="#" alt="facebook icon"
+                        class=" text-white p-3">
                     <img src="../Imagenes/icon-twitter.svg" href="#" alt="Twitter icon" class="p-3 text-white">
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
-        (function () {
-            'use strict'
-
-            // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-            var forms = document.querySelectorAll('.needs-validation')
-
-            // Bucle sobre ellos y evitar el envío
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

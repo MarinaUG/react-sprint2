@@ -69,11 +69,13 @@ h5, .h5 {
   right: 20px;
 }
 
-.accordion-item h2 button.collapse img, .accordion-item .h2 button.collapse img {
-  position: absolute;
-  right: 20px;
+.accordion-buttom.collapse .arrow {
+  transform: rotate(90deg);
+}
+
+.arrow:hover {
   transform: rotate(180deg);
-  transition: 0.3s ease-in-out;
+  filter: invert(50%) sepia(45%) saturate(3640%) hue-rotate(325deg) brightness(100%) contrast(96%);
 }
 
 .navbar-nav .nav-link:hover {
@@ -103,6 +105,28 @@ h5, .h5 {
 
 .accordion-button:hover {
   color: #FA5959;
+}
+
+.btn.btn-secondary:hover {
+  background-color: white;
+  color: #FA5959 !important;
+  border-color: #FA5959;
+}
+
+#emailId:hover {
+  border-color: #FA5959;
+}
+
+.social {
+  color: white;
+}
+
+.social:hover {
+  color: #FA5959;
+}
+
+.socialIcon:hover {
+  filter: invert(50%) sepia(45%) saturate(3640%) hue-rotate(325deg) brightness(100%) contrast(96%);
 }
 
 /*!

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPRINT 2 Nivell 2 Exercici5</title>
+    <title>SPRINT 2 Nivell 2 Exercici6</title>
     <link rel="stylesheet" href="estils.css" />
 </head>
 
@@ -284,13 +284,16 @@
         <div class="container p-4 text-center text-white">
             <h6 class="text-uppercase py-4">35.000 already joined</h6>
             <h2>Stay up-to-date with what we're doing</h2>
-            <form action="#" class="row justify-content-center py-4">
-                <div class="form col-12 col-lg-3 col-md-3 g-2">
-                    <input type="email" placeholder="Enter your email adress" class="form-control" required>
-                   
-                </div>
-                <div class="form col-12 col-lg-2 col-md-2 g-2">
-                    <button class="btn btn-secondary text-white rounded-1" type="submit">Contact us</button>
+            <form class="needs-validation" novalidate>
+                <div class="row d-flex gap-3 justify-content-center py-4">
+                    <div class="col-12 col-lg-3 col-md-3 g-2">
+                        <input type="email" class="form-control form-control-sm" placeholder="Enter your email address" id="emailId"
+                            required>
+                        <div class="invalid-feedback bg-secondary text-white p-1">Whoops make sure it's an email</div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-2 g-2">
+                        <button class="btn btn-secondary text-white rounded-1" type="submit">Contact us</button>
+                    </div>
                 </div>
             </form>
         </div>
@@ -299,20 +302,40 @@
                 <div class="col-md-7 col-lg-8 text-center text-md-start">
                     <div class="p-3">
                         <img class="logo" src="../Imagenes/logo-bookmark - copia.svg" href="#">
-                        <a class="text-uppercase text-white px-4 text-decoration-none" href="#">Features</a>
-                        <a class="text-uppercase  text-white pe-4 text-decoration-none" href="#">Pricing</a>
-                        <a class="text-uppercase  text-white pe-4 text-decoration-none" href="#">Contact</a>
+                        <a class="social text-uppercase px-4 text-decoration-none" href="#">Features</a>
+                        <a class="social text-uppercase pe-4 text-decoration-none" href="#">Pricing</a>
+                        <a class="social text-uppercase pe-4 text-decoration-none" href="#">Contact</a>
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-4 text-center text-md-end">
-                    <img src="../Imagenes/icon-facebook.svg" href="#" alt="facebook icon"
-                        class=" text-white p-3">
-                    <img src="../Imagenes/icon-twitter.svg" href="#" alt="Twitter icon" class="p-3 text-white">
+                    <img class="socialIcon p-3" src="../Imagenes/icon-facebook.svg" href="#" alt="facebook icon">
+                    <img class="socialIcon p-3" src="../Imagenes/icon-twitter.svg" href="#" alt="Twitter icon">
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+        (function () {
+            'use strict'
 
+            // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Bucle sobre ellos y evitar el envío
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

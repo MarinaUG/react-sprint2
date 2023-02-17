@@ -64,15 +64,16 @@ h5{
 .accordion-item h2 button img{
   position:absolute;
   right:20px;
-  }
-  
-  .accordion-item h2 button.collapse img{
-  position:absolute;
-  right:20px;
-  transform:rotate(180deg);
-  transition: .3s ease-in-out;
-}  
+}
 
+.accordion-buttom.collapse .arrow{
+  transform:rotate(90deg);
+}
+.arrow:hover{
+    transform:rotate(180deg);
+    filter: invert(50%) sepia(45%) saturate(3640%) hue-rotate(325deg) brightness(100%) contrast(96%);
+}
+  
 .navbar-nav .nav-link:hover{
   color:$secondary;
 }
@@ -99,6 +100,27 @@ h5{
 .accordion-button:hover{
   color:$secondary;
 }
+
+.btn.btn-secondary:hover{
+  background-color: white;
+  color:$secondary !important;
+  border-color: $secondary; 
+}
+#emailId:hover{
+  border-color:$secondary;
+}
+.social{
+  color:white;
+}
+.social:hover{
+  color:$secondary;
+}
+
+.socialIcon:hover{
+  
+ filter: invert(50%) sepia(45%) saturate(3640%) hue-rotate(325deg) brightness(100%) contrast(96%);
+}
+
 
 
 //importar el bootstrap//
